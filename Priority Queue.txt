@@ -1,0 +1,16 @@
+import java.util.*;
+class Main{
+public static void main(String[] args){
+PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
+Scanner scn = new Scanner(System.in);
+int n = scn.nextInt();
+for(int l =1;l<= n;l++){
+    int k = scn.nextInt();
+    pq.add(k);
+}
+while(! pq.isEmpty()){
+    System.out.println(pq.peek());
+    pq.remove();
+}
+}
+}
